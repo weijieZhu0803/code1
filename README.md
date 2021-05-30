@@ -7,13 +7,13 @@ Main.py（学习率、优化器、训练集、验证集以及记录参数等在�
 
 进入到…/Dual_resnet_pytorch_unbantu/ 这个路径下，输入python main.py开始训练
 
-train_2.py&val_1.py
+train.py&val.py
 
 分别为训练代码和验证代码
 
-在train_2.py文件中可以通过设置total_loss_dic[str(i)]来进行消融实验。
+在train.py文件中可以通过设置total_loss_dic[str(i)]来进行消融实验。
 
-val_1.py文件中可以设置模型参数保存策略，（本实验保存结果最好的模型参数），还可以保存文件路径、文件名。
+val.py文件中可以设置模型参数保存策略，（本实验保存结果最好的模型参数），还可以保存文件路径、文件名。
 
 resnet.py
 
@@ -29,7 +29,7 @@ opts.py
 
 （2）	测试
 
-test_new.py
+test.py
 
 为测试文件，用于测试模型性能，可在其中设置，需要加载的模型参数以及需要测试的测试集。
 
