@@ -75,8 +75,8 @@ if __name__ == '__main__':
             pin_memory=True)
         train_logger = Logger(
             os.path.join(opt.result_path, 'train.log'),
-            ['epoch', 'aux_loss', 'main_loss', 'main_cross_loss', 'main_KL_loss', 'aux_cross_loss', 'aux_KL_loss',
-             'aux_acc', 'main_acc', 'lr'])
+            ['epoch', 'aux_loss', 'main_loss', 'main_cross_loss', 'main_KL_loss', 'aux_cross_loss', 'aux_KL_loss','aux_acc', 'main_acc', 'lr'])
+             
         train_batch_logger = Logger(
             os.path.join(opt.result_path, 'train_batch.log'),
             ['epoch', 'batch', 'iter', 'loss', 'acc', 'lr'])
@@ -135,9 +135,9 @@ if __name__ == '__main__':
 
         if not opt.no_val:
             print("val:")
-            Val_aux_acc_max, Val_main_acc_max = val_epoch(i, val_loader_1, val_loader_2, model_1, model_2, criterion,
-                                                          opt,
-                                                          Val_aux_acc_max, Val_main_acc_max, val_logger)
+            Val_aux_acc_max, Val_main_acc_max = val_epoch(i, val_loader_1, val_loader_2, model_1, model_2, criterion,opt,Val_aux_acc_max, Val_main_acc_max, val_logger)
+                                                         
+                                                          
     print("train over!")
 
 
