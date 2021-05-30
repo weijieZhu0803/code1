@@ -2,6 +2,7 @@
 
 （1）	训练
 Main.py（学习率、优化器、训练集、验证集以及记录参数等在此设置）
+
 当各项参数设置完毕之后，进入到pytorch环境
 进入到…/Dual_resnet_pytorch_unbantu/ 这个路径下，输入python main.py开始训练
 train_2.py&val_1.py
