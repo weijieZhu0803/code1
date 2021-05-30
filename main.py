@@ -10,8 +10,6 @@ import torch.utils.data as Data
 from opts import parse_opts
 from model import generate_model
 from utils import Logger
-# from train_same import train_epoch
-# from val_same import val_epoch
 from train import train_epoch
 from val import val_epoch
 
